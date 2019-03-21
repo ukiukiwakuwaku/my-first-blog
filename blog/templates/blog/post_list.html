@@ -1,33 +1,80 @@
-<html>
-    <head>
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <title>たかたかの部屋</title>
-    </head>
-    <body>
-      <div>
-        <h1><a href="/">たかたかの部屋</a></h1>
-      </div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ページのタイトル</title>
+<link rel="stylesheet" href="../common/css/style.css">
+<link rel="stylesheet" href="../common/css/normalize.css">
+</head>
+<body>
+	<div id="Page">
 
-    {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-    {% endfor %}
+	<footer id="Pagefooter">
+		<h1 id="Sitetitle">でんがん塾</h1>
+		<p id="catchcopy">勉強は君たちに何を与えてくれるか</p>
+
+		<nav class="Glovalnavi">
+			<ul>
+				<li class="Home" ><a href="../portfolio/01.html">ホーム</a></li>
+				<!--<li><a href="../Idea/Idea.html"> 理念</a></li>-->
+				<li  ><a href="../Selfintroduce/Selfintroduce.html">講師紹介</a></li>
+				<li ><a href="../Movies/Movies.html">学習動画</a></li>
+				<li><a href="../Supporter/Supporter.html">応援していただける皆様へ</a></li>
+			</ul>
+		</nav>
+	</footer>
 
 
-      <div>
-        <h2><a href="">初めての投稿</a></h2>
-        <p>サイト立ち上げました！ </p>
-        <p>公開日: 2019/03/20, 9:15</p>
-      </div>
 
-        <div>
-            <h2><a href="">2番目の投稿</a></h2>
-            <p> こんにちは！ よろしくお願いします！ </p>
-            <p>公開日: 2019/03/20, 9:15</p>
-        </div>
-    </body>
-</html>
+	<div id="Pagebody">
+
+		<div id="Pagemainbody">
+		 <article class="First-section">
+		    <section>
+					<h2 class="Idea">理念</h2>
+		      <p>なんかいいこと書く</p>
+				</section>
+			</article>
+
+			<article class="Omake">
+			<aside>
+				<p>でんがん塾の協力者</p>
+				<p　font-size 8px;>web管理　かんちゃん</p>
+			</aside>
+
+			<aside class="Link">
+				<p>関連のあるリンク</p>
+				<ul>
+					<li><a href="https://www.youtube.com/channel/UCxIPzBJ59q3Bv9pNmCYIC_g " >
+						でんがんチャンネル</a></li>
+					<li><a href="https://www.youtube.com/channel/UCPyNsNSTUtywkekbDdCA_8Q " >
+						はなおチャンネル</a></li>
+				</ul>
+			</aside>
+		</article>
+		</div>
+
+			<div id="Pagesubbody">
+
+				<nav class="Localnavi">
+				<section class="News">
+					<h2 id="Osirase">おしらせ</h2>
+					<ul>
+						<li><time datetime="2018-12-07">2018.12.07</time><br>
+							サイトが公開になりました</li>
+						<li><time datetime="2018-12-07">2018.12.07</time><br>
+							新しい動画が公開されました</li>
+					</ul>
+				</section>
+			</div><!--Pagesubbody -->
+
+		</div>
+
+
+	</div><!--Page -->
+
+		<footer id="Copyright2">
+			<p id="Copyright"><small>Copyrigth&copy; 2018 @kanchan All Rigths Rederved.</small></p>
+		</footer>
+
+	  </body>
